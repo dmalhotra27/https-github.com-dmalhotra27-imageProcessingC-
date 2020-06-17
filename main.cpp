@@ -3,7 +3,7 @@
 #include<fstream>
 #include <iostream>
 #include <string>
-#include "image.h"
+#include "Image.h"
 #include <unordered_map>
 
 using namespace cv;
