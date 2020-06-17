@@ -96,7 +96,8 @@ int main(int argc, char** argv)
 
 		// resize gray image generated to the width & height of input image
 		Size size1(std::stoi(width), std::stoi(height));
-		resize(gray, gray, size1, 0, 0, INTER_LINEAR_EXACT);
+		//resize(gray, gray, size1, 0, 0, INTER_LINEAR_EXACT);
+		resize(gray, gray, size1, 0, 0, INTER_NEAREST);
 
 		// initialise pixel data in the image object
 		image.initPixels(gray);
